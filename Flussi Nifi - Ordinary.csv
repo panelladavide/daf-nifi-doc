@@ -1,0 +1,23 @@
+NOME,STATO,INPUT,FORMATO,LANDING,FORMATO,SEPARATORE,STAGE1,METADATI,STAGE CREATE TABLE,NOTE
+OrdinaryDatasetCsv,RUNNING,"
+/home/regione_toscana/monitoraggio/servizi_qualificati/dati_accesso",csv,HDFS,csv,;,no,A mano tramite script python( create_labnding_pyhton.py) ,A mano tramite script python( create_labnding_pyhton.py) ,in attesa di agganciare il flusso al catalog manager
+,RUNNING,/home/comune_roma/trasporti/incidenti/ciclisti,csv,,,;,,,,
+,STOPPED,/home/pac_anac,csv,,,",",,,,
+,RUNNING,/home/pac_agenziaentrate,csv,,,;,,,,
+,RUNNING,/home/pac_mit,csv,,,"; e ,",,,,
+,RUNNING,/home/pac_anpr,csv,,,;,,,,
+,RUNNING,/home/pac_agid,txt,,,tab,"csv to parquet tramite spark, inferenza metadati tramite spark",da file parquet tramite spark,bisogna aggiungere a mano nell'attributo parquetname il nome del file parquet,
+,RUNNING,/home/pac_Inail,csv,,,;,no,A mano tramite script python( create_labnding_pyhton.py) ,A mano tranute script python (create_landing_pyhon.py),
+,STOPPED,/home/pac_Sose,csv,,,;,,,,
+,RUNNING,home/comune_torino,csv,HDFS,csv,;,elimina tutti i double quotes,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+OrdinaryDatasetJson,RUNNING,/home/comune_roma/trasporti/incidenti/veicoli,json,HDFS,json,,json to parquet tramite spark,da file parquet tramite spark,bisogna aggiungere a mano nell'attributo parquetname il nome del file parquet,Allineare flusso (create parquet table) con quello di pac_agid
+,STOPPED,/home/pac_Aci,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+OrdinaryDatasetGeojson,RUNNING,/home/comune_firenze/test_mobilita_sicurezza/test_colonnine_ricarica/test_colonnine,geojson,HDFS,geojson,,geojson to parquet tramite spark,da file parquet tramite spark,bisogna aggiungere a mano nell'attributo parquetname il nome del file parquet,Allineare con il parth della directory /comune_firenze/mobilita_sicurezza/colonnine_ricarica quando inseriscono il tracciato con il timestamp
