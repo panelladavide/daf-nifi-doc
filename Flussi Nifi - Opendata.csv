@@ -1,0 +1,2 @@
+NOME,INPUT,FORMATO,STAGE0,INPUT METADATI,OUTPUT
+OpenDataCsv,/home/test_opendata,CSV,HDFS,catalog manager,tabella impala
